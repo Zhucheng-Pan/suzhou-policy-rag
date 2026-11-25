@@ -3,7 +3,7 @@ from hybrid import HybridRetriever
 from sentence_transformers import CrossEncoder
 
 class Reranker:
-    def __init__(self, model_name="BAAI/bge-reranker-base"):
+    def __init__(self, model_name="BAAI/bge-reranker-v2-m3"):
 
         self.model = CrossEncoder(model_name, max_length=512)
 
